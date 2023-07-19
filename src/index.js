@@ -21,7 +21,7 @@ const downloadButton = document.getElementById("bttnDownload");
 // Agrego un evento de clic al botón
 downloadButton.addEventListener("click", () => {
   // URL del archivo PDF
-  const pdfUrl = "img/cv_MariaGarcia.pdf";
+  const pdfUrl = "src/cv_MariaGarcia.pdf";
 
   // Descargo el archivo
   window.open(pdfUrl, "_blank");
