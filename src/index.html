@@ -5,23 +5,28 @@
     <title>Portafolio_mariaGariaB</title>
     <link rel="stylesheet" href="styles.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-  
-  </head>
-  <body>
-    <section class="wrapper">
+    </head>
+    <body>
+      <section class="wrapper">
+     <div class="contenedor-header">
       <header>
-        <nav class="navbar">
-          <section class="brand">
-            <h2>m<span>G</span></h2>
-          </section>
-          <ul class="menu">
-            <li><a href="#inicio"  class="active">Inicio</a></li>
-            <li><a href="#sobreMi">Sobre mí</a></li>
-            <li><a href="#portafolio">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
+          <div class="logo">
+              <a href="#">mG</a>
+          </div>
+          <nav id="nav">
+              <ul>
+                  <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                  <li><a href="#sobreMi" onclick="seleccionar()">Sobre mi</a></li>
+                  <!-- <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>--> 
+                  <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                  <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+              </ul>
+          </nav>
+          <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+              <i class="fa-solid fa-bars"></i>
+          </div>
       </header>
+  </div>
       <main class="main">
         <div class="info-content" id="inicio">
           <h1>Soy <span>Maria</span> García</h1>
@@ -72,7 +77,6 @@
             <section class="card__img" id="second"></section>
             <section class="card__title" id="titulo segundo">
               <h2>Data Lovers</h2>
-              <br>
             </section>
             <section class="card__proyect-links">
               <a href="https://github.com/MariaGarciaB/DEV004-data-lovers" target="_blank">
@@ -90,7 +94,7 @@
           <article class="card">
             <section class="card__img" id="tercero"></section>
             <section class="card__title">
-              <h2>Social Network</h2>
+              <h2>Social Network</h2> 
             </section>
             <section class="card__proyect-links">
               <a href="https://github.com/MariaGarciaB/DEV004-social-network" target="_blank">
@@ -110,7 +114,6 @@
             </div>
             <div class="card__title">
               <h2>Enlaces .ms</h2>
-              <br>
             </div>
             <div class="card__proyect-links">
               <a href="https://github.com/MariaGarciaB/DEV004-md-links" target="_blank">
@@ -133,21 +136,20 @@
         </div>
         <main class="container-contact">
              <!-- <img src="img/contact.jpg" alt=""> -->
-          <div class="contact-form">
-            <h4>Deja un mensaje...</h4>
-            <form class="form-group">
-              <input type="text" placeholder="Nombre" class="input">
-              <input type="email" placeholder="Email" class="input">
-              <textarea name="message" placeholder="Deja tu mensaje aquí..."></textarea>
-              <button type="submit" class="btn-submit">Enviar</button>
-            </form>
-          </div>
-          <div class="info-form">
+            <div class="info-form">
             <h4>Mis Datos</h4>
             <form class="info">
               <p>Email: maria.ds.garb@gmail.com</p>
               <p>Ubicación: Zapopan, Jalisco, México.</p>
             </form>
+          </div>
+          <div class="sotial-networks">
+            <a href="https://github.com/MariaGarciaB" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mariagarbar/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
         </main>
         </article>
@@ -157,14 +159,14 @@
           <h2>Maria García</h2>
           <h5>Front-End Developer Jr</h5>
         </div>
-        <div class="sotial-networks">
+        <!-- <div class="sotial-networks">
           <a href="https://github.com/MariaGarciaB" target="_blank">
             <i class="fab fa-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/mariagarbar/" target="_blank">
             <i class="fab fa-linkedin"></i>
           </a>
-        </div>
+        </div> -->
       </footer>
       <script type="module" src="index.js"></script> 
     </body>

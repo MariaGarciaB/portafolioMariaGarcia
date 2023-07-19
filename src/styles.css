@@ -10,52 +10,62 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Montserrat';
+  background-color: #191c32;
 }
 
 .wrapper {
-  width: 100%;
+    width: 100%;
   height: 100%;
-  background-color: #06283B;
+  background-color: #191c32;
   color: #fff;
 }
 
-.navbar {
+.contenedor-header{
+  background: #191c32;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.contenedor-header header{
+  max-width: 1100px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  align-items: center;
+  padding: 15px 20px;
 }
-/* .brand {
-  margin-top: -7px;
-} */
-.brand span {
+.contenedor-header header .logo a{
+  font-family: 'Righteous', sans-serif;
+  font-size: 36px;
   color: aqua;
-}
-.menu {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;
-}
-.menu  li {
-  list-style: none;
-
-}
-.menu a {
-  color: #fff;
   text-decoration: none;
-  padding: 10px 20px; 
 }
-
-.menu li:hover a{
-  background-color: #7c9f24;
-  color: #06283B;
+.contenedor-header header ul{
+  display: flex;
+  list-style: none;
 }
-
-.menu .active {
-  color: aqua; 
+.contenedor-header header nav ul li a{
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-.menu li a:hover {
-  color: #59d0b4;
+.contenedor-header header nav ul li a:hover{
+  color: aqua;
+  padding: 0.5em;
+}
+.nav-responsive{
+  background-color: aqua;
+  color:#fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
 }
 
 .main {
@@ -66,7 +76,7 @@ body {
   grid-template-columns: repeat(2,1fr);
   align-items: center;
   gap: 2em;
-}
+} 
 
 #fotoPerfil{
   width: 318px;
@@ -81,12 +91,12 @@ h1 {
 }
 
 .info-content span {
-  color: #7c9f24;
+  color: aqua;
 }
 
 .download-cv {
   padding: 10px 20px;
-  background-color: #7c9f24;
+  background-color: aqua;
   border: none;
   border-radius: 20px;
   margin-top: 10px;
@@ -106,6 +116,10 @@ h1 {
   width: 350px;
   height: 520px;
   z-index: 1;
+}
+
+#sobreMi{
+  background-color: #fff;
 }
 
 .about {
@@ -130,13 +144,13 @@ h1 {
 
 .about-info h2 {
   font-size: 2em;
-  color: #06283B;
+  color: #191c32;
 }
 
 .divider {
   height: 4px;
   width: 60px;
-  background-color: #7c9f24;
+  background-color: aqua;
   margin-top: 5px;
   margin-bottom: 2em;
 }
@@ -149,12 +163,15 @@ font-weight: bold;
 .divider p {
   margin-bottom: 1em;
 }
+.portfolio{
+  height: 1200px;
+}
 
 .portfolio,
 .contact-section {
   width: 100vw;
   height: 100%;
-  background-color: #06283B;
+  background-color: #191c32;
   color: #fff;
 }
 
@@ -185,22 +202,27 @@ font-weight: bold;
 .card {
   height: 350px;
   width: 300px;
-  background-color: #2b3058;
+  background-color: #222644;
   margin: 1em;
+  /* border-radius: 15px; */
+  box-shadow: 10px 5px 5px rgb(22, 22, 22);
+  opacity: 70%;
 }
 
 .card__img {
   width: 100%;
-  height: 150px;
+  height: 180px;
 }
 
 .card__title {
   padding: 20px;
+  text-align: center;
 }
 
 .card__proyect-links {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
 }
 .card__proyect-links a {
   color: #fff;
@@ -219,7 +241,7 @@ font-weight: bold;
 
 .project-details-button a {
   text-decoration: none;
-  color: #06283B;
+  color: #191c32;
 }
 
 
@@ -228,7 +250,7 @@ font-weight: bold;
 }
 
 .container{
-  background-color: #06283B;
+  background-color: #191c32;
 }
 
 .container-contact {
@@ -282,19 +304,22 @@ font-weight: bold;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 200px;
-  padding: 2em;
-  background-color: aqua;
+  width: 100%;
+  height: 150px;
+  padding: 0.5em;
+  background-color: #1e2326;
 }
 
 .footer-content h2 {
-  font-size: 3em;
+  font-size: 2em;
+  color:#fff ;
+  text-align: center;
 }
 
 .footer-content h5 {
   font-size: 1.5em;
   text-align: center;
+  color: #fff;
 }
 
 .sotial-networks {
@@ -306,34 +331,39 @@ font-weight: bold;
 
 .sotial-networks i {
   font-size: 1.5em;
+  color: aqua;
 }
 
 #primero{
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px; 
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px;  */
   background-image: url(../img/cardValidation.JPG);
+  background-size: cover;
 }
 
 #second {
   /* width: 100%;
   height: 150px; */
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
   background-image: url(../img/dataLovers.JPG);
+  background-size: cover;
 }
 
 #tercero{
   background-image: url(../img/socialNetwork.JPG);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+  background-size: cover;
 }
 
 #cuarto{
   background-image: url(../img/mdLinks.JPG);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+  background-size: cover;
 }
-
+/* 
 .card__title {
   padding: 20px;
   text-align: center;
@@ -424,103 +454,35 @@ font-weight: bold;
 .info-form{
   width: 50%;
   margin-left: 50px;
-}
+} */
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100px;
-  padding: 2em;
-  background-color: #173f59;
-}
-
-.footer-content h2 {
-  font-size: 2em;
-  text-align: center;
-  color: #fff;
-}
-
-.footer-content h5 {
-  font-size: 1em;
-  text-align: center;
-  color: #fff;
-}
-
-.sotial-networks {
-  display: flex;
-  justify-content: space-evenly;
-  width: 300px;
-  margin-top: 1em;
-  margin-bottom: 5px;
-}
-
-.sotial-networks i {
-  font-size: 1.5em;
-  color: #fff;
+@media screen and (max-width:980px){
+  nav{
+      display: none;
+  }
+  .nav-responsive{
+      display: block;
+  }
+  nav.responsive{
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 75px;
+      background-color: #191c32;
+      width: 180px;
+  }
+  nav.responsive ul{
+      display: block !important;
+  }
+  nav.responsive ul li{
+      border-bottom: 1px solid #fff;
+      padding: 10px 0;
+  }
 }
 
 @media (max-width: 768px) {
   body{
 width: auto;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu li {
-    margin-bottom: 10px;
-  }
-
-  #fotoPerfil{
-    width: 168px;
-    height: 262px;
-    margin-left: 15px;
-  } 
-
-  .about-info {
-    grid-column: 2/10;
-  }
-
-  .about img {
-    display: none;
-  }
-
-  .portfolio{
-    height: auto;
-  }
-
-  .container {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .card {
-    flex: 0 0 50%;
-    margin-bottom: 10px;
-  }
-
-}
-
-
-@media (max-width: 768px) {
-  body{
-width: auto;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu li {
-    margin-bottom: 10px;
   }
 
   #fotoPerfil{
