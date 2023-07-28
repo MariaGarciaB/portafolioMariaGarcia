@@ -7,64 +7,63 @@
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Montserrat';
-  background-color: #191c32;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
-    width: 100%;
-  height: 100%;
-  background-color: #191c32;
+  width: 100vw;
+  height: 100vh;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   color: #fff;
 }
 
-.contenedor-header{
-  background: #191c32;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-.contenedor-header header{
-  max-width: 1100px;
-  margin: auto;
+.navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+  padding: 2em;
 }
-.contenedor-header header .logo a{
-  font-family: 'Righteous', sans-serif;
-  font-size: 36px;
+
+.brand {
+  margin-top: -7px;
+}
+
+.brand span {
   color: aqua;
-  text-decoration: none;
 }
-.contenedor-header header ul{
+
+.menu {
   display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.menu li {
   list-style: none;
+
 }
-.contenedor-header header nav ul li a{
-  text-align: none;
+
+.menu a {
   color: #fff;
-  margin: 0 15px;
-  padding: 3px;
-  transition: .5s;
   text-decoration: none;
-  font-weight: bold;
+  padding: 10px 20px;
 }
-.contenedor-header header nav ul li a:hover{
-  color: aqua;
-  padding: 0.5em;
-}
-.nav-responsive{
+
+.menu a:hover {
   background-color: aqua;
-  color:#fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
+  color: #191c32;
+}
+
+.menu .active {
+  color: aqua;
+
+}
+
+.toggle-menu,
+.info-content__subtitle,
+.info-content .sotial-networks {
   display: none;
 }
 
@@ -73,37 +72,29 @@ body {
   width: 80vw;
   height: 80vh;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2em;
-} 
-
-#fotoPerfil{
-  width: 318px;
-  height: 412px;
-  margin-left: 15px;
-  background-image: url(../img/perfil.jpg);
-  background-size: cover;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: clamp(4vw, 1.5em, 3em);
 }
 
 .info-content span {
   color: aqua;
 }
 
-.download-cv {
+.download-cv{
   padding: 10px 20px;
   background-color: aqua;
   border: none;
   border-radius: 20px;
   margin-top: 10px;
   cursor: pointer;
-  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
 }
 
 .download-cv:hover {
@@ -112,77 +103,26 @@ h1 {
 }
 
 .main img {
-  border:  7px solid aqua;
+  border: 7px solid aqua;
   width: 350px;
   height: 520px;
-  z-index: 1;
-}
-
-#sobreMi{
-  background-color: #fff;
-}
-
-.about {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
-  align-items: center;
-}
-
-.about img {
-  width: 400px;
-  height: 400px;
-  grid-column: 2/5;
-  background-image: url(../img/sobreMi.jpg);
-  background-size: cover;
-}
-
-.about-info {
-  grid-column: 5/10;
-  padding: 3em;
-}
-
-.about-info h2 {
-  font-size: 2em;
-  color: #191c32;
-}
-
-.divider {
-  height: 4px;
-  width: 60px;
-  background-color: aqua;
-  margin-top: 5px;
-  margin-bottom: 2em;
-}
-
-#aboutMe{
-color: rgb(183, 182, 182);
-font-weight: bold;
-}
-
-.divider p {
-  margin-bottom: 1em;
-}
-.portfolio{
-  height: 1200px;
+  min-height: 300px;
 }
 
 .portfolio,
 .contact-section {
   width: 100vw;
-  height: 100%;
-  background-color: #191c32;
+  background-color: #0F2027;
   color: #fff;
 }
 
 .portfolio-heading {
   width: 100vw;
-  padding: 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
 
+}
 
 .portfolio-heading h2,
 .contact-heading h2 {
@@ -192,26 +132,47 @@ font-weight: bold;
 
 .portfolio .container {
   width: 80vw;
-  height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
   height: 350px;
   width: 300px;
-  background-color: #222644;
+  background-color: #203A43;
   margin: 1em;
   /* border-radius: 15px; */
   box-shadow: 10px 5px 5px rgb(22, 22, 22);
   opacity: 70%;
 }
 
+
 .card__img {
   width: 100%;
-  height: 180px;
+  height: 150px;
+}
+
+#primero{
+  background-image: url(../img/cardValidation.JPG);
+  background-size: cover;
+}
+
+#segundo {
+  background-image: url(../img/dataLovers.JPG);
+  background-size: cover;
+}
+
+#tercero{
+  background-image: url(../img/socialNetwork.JPG);
+  background-size: cover;
+}
+
+#cuarto{
+  background-image: url(../img/mdLinks.JPG);
+  background-size: cover;
 }
 
 .card__title {
@@ -222,8 +183,8 @@ font-weight: bold;
 .card__proyect-links {
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
 }
+
 .card__proyect-links a {
   color: #fff;
   text-decoration: none;
@@ -233,24 +194,8 @@ font-weight: bold;
   font-size: 1.5em;
 }
 
-.button-content {
-  display: flex;
-  justify-content: center;
-  margin: 1em;
-}
-
-.project-details-button a {
-  text-decoration: none;
-  color: #191c32;
-}
-
-
 .contact-section {
   padding: 3em;
-}
-
-.container{
-  background-color: #191c32;
 }
 
 .container-contact {
@@ -263,7 +208,6 @@ font-weight: bold;
   width: 750px;
   height: 700px;
   bottom: 0px;
-  opacity: 90%;
 }
 
 .form-group {
@@ -272,6 +216,7 @@ font-weight: bold;
   width: 30vw;
   margin-top: 2em;
 }
+
 .form-group textarea {
   height: 150px;
   padding: 1.5em;
@@ -304,22 +249,21 @@ font-weight: bold;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 150px;
-  padding: 0.5em;
-  background-color: #1e2326;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: aqua;
+  text-align: center;
+  color: #fff;
 }
 
 .footer-content h2 {
-  font-size: 2em;
-  color:#fff ;
-  text-align: center;
+  font-size: 3em;
 }
 
 .footer-content h5 {
   font-size: 1.5em;
   text-align: center;
-  color: #fff;
 }
 
 .sotial-networks {
@@ -331,104 +275,162 @@ font-weight: bold;
 
 .sotial-networks i {
   font-size: 1.5em;
-  color: aqua;
 }
 
-#primero{
-  /* border-top-left-radius: 15px;
-  border-top-right-radius: 15px;  */
-  background-image: url(../img/cardValidation.JPG);
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #0F2027;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #203A43;
+  margin: 1em;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/2-original.png);
   background-size: cover;
 }
 
-#second {
-  /* width: 100%;
-  height: 150px; */
-  /* border-top-left-radius: 15px;
-  border-top-right-radius: 15px; */
-  background-image: url(../img/dataLovers.JPG);
-  background-size: cover;
+.card__title {
+  padding: 20px;
 }
 
-#tercero{
-  background-image: url(../img/socialNetwork.JPG);
-  /* border-top-left-radius: 15px;
-  border-top-right-radius: 15px; */
-  background-size: cover;
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#cuarto{
-  background-image: url(../img/mdLinks.JPG);
-  /* border-top-left-radius: 15px;
-  border-top-right-radius: 15px; */
-  background-size: cover;
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
 }
 
-@media screen and (max-width:980px){
-  nav{
-      display: none;
-  }
-  .nav-responsive{
-      display: block;
-  }
-  nav.responsive{
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 75px;
-      background-color: #191c32;
-      width: 180px;
-  }
-  nav.responsive ul{
-      display: block !important;
-  }
-  nav.responsive ul li{
-      border-bottom: 1px solid #fff;
-      padding: 10px 0;
-  }
+.card__proyect-links i {
+  font-size: 1.5em;
 }
 
-@media (max-width: 768px) {
-  body{
-width: auto;
-  }
-
-  #fotoPerfil{
-    width: 168px;
-    height: 262px;
-    margin-left: 15px;
-  } 
-
-  .about-info {
-    grid-column: 2/10;
-  }
-
-  .about img {
-    display: none;
-  }
-
-  .portfolio{
-    height: auto;
-  }
-
-  .container {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .card {
-    flex: 0 0 50%;
-    margin-bottom: 10px;
-  }
-
-  #contacto{
-    margin-top: 750px;
-  }
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
 }
 
-@media screen and (max-width: 800px) {
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  margin-top: 10em;
+}
+
+
+
+.contact-section img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: #2C5364;
+}
+
+.footer-content h2 {
+  font-size: 2em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 1100px) {
 
   .menu {
     flex-direction: column;
@@ -509,5 +511,10 @@ width: auto;
     width: 80vw;
 
   }
+
+  .portfolio-heading h2,
+.contact-heading h2 {
+  text-align: center;
+}
 
 }

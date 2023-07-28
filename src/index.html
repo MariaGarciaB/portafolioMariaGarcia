@@ -1,172 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio_mariaGariaB</title>
-    <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-    </head>
-    <body>
-      <section class="wrapper">
-     <div class="contenedor-header">
-      <header>
-          <div class="logo">
-              <a href="#">mG</a>
-          </div>
-          <nav id="nav">
-              <ul>
-                  <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-                  <li><a href="#sobreMi" onclick="seleccionar()">Sobre mi</a></li>
-                  <!-- <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>--> 
-                  <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
-                  <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
-              </ul>
-          </nav>
-          <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-              <i class="fa-solid fa-bars"></i>
-          </div>
-      </header>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>m<span>G</span></h2>
+        </div>
+        </nav>
+    </header>
+    <main class="main">
+      <div class="info-content">
+        <span class="info-content__subtitle">Frontend Developer Jr</span>
+        <h1>Soy <span>Maria</span> García</h1>
+        <div class="sotial-networks">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+         <p class="info-content__p">Desarrolladora Front-End Jr. especializada en JavaSript, con un background como psicóloga. Mi experiencia
+                pofesional me ha permitido desarrollar habilidades para encontrar soluciones creativas y adaptativas, que
+                mejoran y optimizan problemas de la vida cotidiana. Esto me llevó a incorporame al mundo del desarrollo web. Me encuentro lista y emocionda por seguir creciendo en este nuevo camino como profesional.</p>
+         <a download href="#"><button class="download-cv">Download CV</button></a>
+      </div>
+      <img src="https://api.typeform.com/responses/files/ee1b618f1f7663e1544b282b712e24da2ccf2b907002256413209160e6d86be7/Polish_20230420_193246299__1_.jpg" alt="">
+    </main>
   </div>
-      <main class="main">
-        <div class="info-content" id="inicio">
-          <h1>Soy <span>Maria</span> García</h1>
-           <p>Desarrolladora Front-End Jr | JavaSript | HTML | Css| Jest | Node.js</p>
-           <a download href="cv_MariaGarcia.pdf"><button class="download-cv">Download CV</button></a>
-        </div>
-        <img id="fotoPerfil" src="" alt="Foto Maria García">
-      </main>
-    </section>
-
-      <article class="about" id="sobreMi">
-        <img src="" id="aboutMe" alt="Animada">
-        <section class="about-info">
-          <h2>Sobre mí</h2>
-          <section class="divider"></section>
-          <p id="aboutMe">Desarrolladora Front-End Jr. especializada en JavaSript, con un background como psicóloga. Mi experiencia
-            pofesional me ha permitido desarrollar habilidades para encontrar soluciones creativas y adaptativas, que
-            mejoran y optimizan problemas de la vida cotidiana. Esto me llevó a incorporame al mundo del desarrollo web. Me encuentro lista y emocionda por seguir creciendo en este nuevo camino como profesional.</p>
-        </section>
-      </article>
-
-      <section class="portfolio">
-        <section class="portfolio-heading" id="portafolio">
-          <h2>Proyectos</h2>
-          <section class="divider"></section>
-        </section>
-        <main class="container">
-          <article class="card">
-            <section class="card__img" id="primero">
-            </section>
-            <section class="card__title" id="tituloPrimero">
-              <h2>Card Validation</h2>
-            </section>
-            <section class="card__proyect-links">
-              <a href="https://github.com/MariaGarciaB/DEV004-card-validation.github.io" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://mariagarciab.github.io/DEV004-card-validation.github.io/src/" target="_blank">
-                <i class="fas fa-globe-asia"></i>
-              </a>
-              <a href="https://github.com/MariaGarciaB/DEV004-card-validation.github.io/tree/main/src" target="_blank">
-                <i class="fas fa-code"></i>
-              </a>
-            </section>
-            <section class="button-content"></section>
-          </article>
-          <article class="card">
-            <section class="card__img" id="second"></section>
-            <section class="card__title" id="titulo segundo">
-              <h2>Data Lovers</h2>
-            </section>
-            <section class="card__proyect-links">
-              <a href="https://github.com/MariaGarciaB/DEV004-data-lovers" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://mariagarciab.github.io/DEV004-data-lovers/src/" target="_blank">
-                <i class="fas fa-globe-asia"></i>
-              </a>
-              <a href="https://github.com/MariaGarciaB/DEV004-data-lovers/tree/main/src" target="_blank">
-                <i class="fas fa-code"></i>
-              </a>
-            </section>
-            <section class="button-content"></section> 
-          </article>
-          <article class="card">
-            <section class="card__img" id="tercero"></section>
-            <section class="card__title">
-              <h2>Social Network</h2> 
-            </section>
-            <section class="card__proyect-links">
-              <a href="https://github.com/MariaGarciaB/DEV004-social-network" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://mamagenial.netlify.app/" target="_blank">
-                <i class="fas fa-globe-asia"></i>
-              </a>
-              <a href="https://github.com/MariaGarciaB/DEV004-social-network/tree/main/src" target="_blank">
-                <i class="fas fa-code"></i>
-              </a>
-            </section>
-            <section class="button-content"></section>
-          </article>
-          <article class="card">
-            <div class="card__img" id="cuarto">
-            </div>
-            <div class="card__title">
-              <h2>Enlaces .ms</h2>
-            </div>
-            <div class="card__proyect-links">
-              <a href="https://github.com/MariaGarciaB/DEV004-md-links" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.npmjs.com/package/@mariagarciab/md-links" target="_blank">
-                <i class="fas fa-globe-asia"></i>
-              </a>
-            </div>
-            <div class="button-content">
-            </div>
-          </article>
-        </main>
-      </section>
-
-        <article class="contact-section" id="contacto">
-        <div class="contact-heading">
-          <h2>Contáctame</h2>
-          <div class="divider"></div>
-        </div>
-        <main class="container-contact">
-             <!-- <img src="img/contact.jpg" alt=""> -->
-            <div class="info-form">
-            <h4>Mis Datos</h4>
-            <form class="info">
-              <p>Email: maria.ds.garb@gmail.com</p>
-              <p>Ubicación: Zapopan, Jalisco, México.</p>
-            </form>
+       <div class="portfolio">
+      <div class="portfolio-heading">
+        <h2>My Portfolio</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card__img" id="primero">
           </div>
-          <div class="sotial-networks">
-            <a href="https://github.com/MariaGarciaB" target="_blank">
+          <div class="card__title">
+            <h2>Validación de Tarjeta</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/MariaGarciaB/Validacion_Tarjeta" target="_blank">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://mariagarciab.github.io/Validacion_Tarjeta/src/" target="_blank">
+            <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="https://github.com/MariaGarciaB/Validacion_Tarjeta/tree/main/src" target="_blank">
+            <i class="fas fa-code"></i>
+            </a>
+          </div>
+          </div>
+        <div class="card">
+          <div class="card__img" id="segundo">
+          </div>
+          <div class="card__title">
+            <h2>Project Description</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="#">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/mariagarbar/" target="_blank">
-              <i class="fab fa-linkedin"></i>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-code"></i>
             </a>
           </div>
-        </main>
-        </article>
-    
-      <footer class="footer"> 
-        <div class="footer-content">
-          <h2>Maria García</h2>
-          <h5>Front-End Developer Jr</h5>
         </div>
-        <!-- <div class="sotial-networks">
-          <a href="https://github.com/MariaGarciaB" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/mariagarbar/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div> -->
-      </footer>
-      <script type="module" src="index.js"></script> 
-    </body>
+        <div class="card">
+          <div class="card__img" id="tercero">
+          </div>
+          <div class="card__title">
+            <h2>Project Description</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img" id="cuarto">
+          </div>
+          <div class="card__title">
+            <h2>Project Description</h2>
+          </div>
+          <div class="card__proyect-links">
+            <a href="https://github.com/Michaelxk/Delegation-Test" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-globe-asia"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="footer"> 
+      <div class="footer-content">
+        <h2>Maria García</h2>
+        <h5>Desarrolladora Front-End</h5>
+        <p>Jr | JavaSript | HTML | Css| Jest | Node.js</p>
+      </div>
+      <div class="sotial-networks">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </footer>
+  <script src="index.js"></script>
+  </body>
+</html>    
