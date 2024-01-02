@@ -155,9 +155,11 @@ body{
 
 /* SOBRE MI */
 /* .sobremi{
-    padding: 50px 20px;
+  margin-top: 5rem;
+height: 100vh;
 } */
 .sobremi .contenido-seccion{
+  /* height: 100vh;*/
     max-width: 70%;
     margin: auto;
     margin-top: 4rem;
