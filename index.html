@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+    <title>mG_lightPortafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">mG</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="assets/meb.jpg" alt="yo animada">
+            </div>
+            <div class="informacion-banner">
+                <p>Hola, que tal!!... Soy</p>
+            <h1>Mari García</h1>
+            <h2>Front-End Developer Jr </h2>
+            <div class="redes">
+                <button
+                class="btn btn-color"
+                onclick="window.open('assets/cv_mariaGarcia.pdf')"
+              >
+                Descargar CV
+              </button>
+                <a href="https://www.linkedin.com/in/mariagarbar/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/MariaGarciaB" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Desarrolladora Front-End </span>  especializada en JavaScript, HTML y Css con un background como psicóloga. Mi experiencia
+                pofesional me ha permitido desarrollar habilidades para encontrar soluciones creativas y adaptativas, que
+                mejoran y optimizan problemas de la vida cotidiana.<br><br>
+                Dar el 100%, un enfoque abierto y adaptable para seguir aprendiendo en cada proyecto  y cada integrante
+                del equipo. Responsabilidad y profesionalismo, es lo que puedes estar seguro de que puedo aportar. <br>Gracias por tomarte el tiempo de conocer un poco sobre mí y mi trabajo.</p>
+                </div>
+          </section>
+
+     <!-- SECCION SKILLS -->
+     <section id="skills" class="skills" >
+      <div class="contenido-seccion">
+          <h1>Skills</h1>
+          </div>
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+            <i class="devicon-javascript-plain colored" style="font-size: 3rem;"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-html5-plain-wordmark colored" style="font-size: 4rem;"></i>
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-css3-plain-wordmark colored" style="font-size: 4rem;"></i>
+              <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-nodejs-plain-wordmark colored" style="font-size: 4rem;"></i>
+              <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-sqlite-plain-wordmark colored" style="font-size: 4rem;"></i>
+              <div>
+                  <h3>SQLite</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-firebase-plain-wordmark colored" style="font-size: 4rem;"></i>
+              <div>
+                  <h3>Firebase</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-jest-plain colored" style="font-size: 3rem;"></i>
+              <div>
+                  <h3>Jest</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-git-plain colored" style="font-size: 4rem;"></i>
+              <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-github-original colored" style="font-size: 3rem;"></i>
+              <div>
+                  <h3>Github</h3>
+                </div>
+              </article>
+              <article>
+                <img clas="b"
+                  src="./assets/skills/flowise.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flowise</h3>
+                </div>
+              </article>
+              <article>
+                <img class="c"
+                  src="./assets/skills/agil.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Metodologías <br> Ágiles</h3>
+                </div>
+              </article>
+              <article>
+                <img class="c"
+                  src="./assets/skills/scrum.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scrum</h3>
+                </div>
+              </article>
+              <article>
+                <img class="b" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+              <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-trello-plain colored" style="font-size: 3rem;"></i>
+              <div>
+                  <h3>Trello</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/skills/netlify.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Netlify</h3>
+                </div>
+              </article>
+              <article>
+                <i class="devicon-npm-original-wordmark colored" style="font-size: 3rem;"></i>
+              <div>
+                  <h3>Npm</h3>
+                </div>
+              </article>
+              <article>
+                <img class="c" 
+                  src="./assets/skills/render.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Render</h3>
+                </div>
+              </article>
+              </div>
+          </div>
+    </section>
+
+        <!-- SECCION PORTFOLIO -->
+    <section id="proyectos" class="portfolio">
+        <h1>Proyectos</h1>
+        <div class="contenido-seccion">
+            <div class="galeria">
+                <div class="proyecto">
+                    <div class="info1">
+                    <img src="assets/p6.JPG" alt="Imágen proyecto Chat con Archivos & de Prompt a JSON (AI)">
+                </div>
+                    <div class="info2">
+                        <h2>Chatflow con IA</h2>
+                        <p id="descripcion"><strong>Chatflows con Flowise </strong> y <strong>AI</strong>, incorporando respuestas en formato JSON basadas en la interacción del usuario.<br><br></p>
+                            <div class="btn-container">
+                                <button
+                                  class="btn btn-color-2 project-btn"
+                                  onclick="window.open('https://github.com/MariaGarciaB/project-prompt-to-json', '_blank')"
+                                >
+                                  Github
+                                </button>
+                                <button
+                                  class="btn btn-color-1 project-btn"
+                                  onclick="window.open('https://www.loom.com/share/61a10d4162e044859839a2bdcd3e9a47?sid=6585317b-bfaa-4f3d-93df-5965fafd069a', '_blank')"
+                                >
+                                  Live Demo
+                                </button>
+                              </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="info1">
+                    <img src="assets/p4.jpg" alt="Imágen proyecto Links .md">
+                </div>
+                    <div class="info2">
+                        <h2>Enlaces .md</h2>
+                        <p id="descripcion">Optimización de enlaces .md con <strong>Node.js</strong>, validación y estadísticas para calidad en archivos Markdown.<br><br><br></p>
+                            <div class="btn-container">
+                                <button
+                                  class="btn btn-color-2 project-btn"
+                                  onclick="window.open('https://github.com/MariaGarciaB/mdLinks', '_blank')"
+                                >
+                                  Github
+                                </button>
+                                <button 
+                                  class="btn btn-color-1 project-btn"
+                                  onclick="window.open('https://www.npmjs.com/package/@mariagarciab/md-links', '_blank')"
+                                >
+                                  Live Demo
+                                </button>
+                              </div>
+                        </div>
+                </div> 
+                <div class="proyecto">
+                    <div class="info1">
+                    <img src="assets/p3b.JPG" alt="Imágen proyecto Red Social">
+                </div>
+                    <div class="info2">
+                        <h2>Red Social</h2>
+                        <p id="descripcion">Red social con registro por correo o Google y funcionalidades respaldadas por <strong>Firebase</strong>, incluyendo muro, comentarios y edición de mensajes.<br><br></p>
+                            <div class="btn-container">
+                                <button
+                                  class="btn btn-color-2 project-btn"
+                                  onclick="window.open('https://github.com/MariaGarciaB/Red_Social', '_blank')"
+                                >
+                                  Github
+                                </button>
+                                <button
+                                  class="btn btn-color-1 project-btn"
+                                  onclick="window.open('https://mamagenial.netlify.app/', '_blank')"
+                                >
+                                  Live Demo
+                                </button>
+                              </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="info1">
+                    <img src="assets/p2b.JPG" alt="Imagen Proyecto Data PokemonGo">
+                </div>
+                    <div class="info2">
+                        <h2>Data PokemonGo</h2>
+                        <p id="descripcion">Página web con información detallada de PokemonGo con filtro, orden y top 10 basado en estadísticas.<br><br><br></p>
+                            <div class="btn-container">
+                                <button
+                                  class="btn btn-color-2 project-btn"
+                                  onclick="window.open('https://github.com/MariaGarciaB/Data_PokemonGo', '_blank')"
+                                >
+                                  Github
+                                </button>
+                                <button
+                                  class="btn btn-color-1 project-btn"
+                                  onclick="window.open('https://mariagarciab.github.io/Data_PokemonGo/src/', '_blank')"
+                                >
+                                  Live Demo
+                                </button>
+                              </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="info1">
+                    <img src="assets/p1b.JPG" alt="Imagen Proyecto Card Validation">
+                </div>
+                    <div class="info2">
+                        <h2>Validación Tarjeta</h2>
+                        <p id="descripcion">Validación de tarjetas con algoritmo de Luhn, enmascaramiento y notificación de estado.<br><br><br></p>
+                            <div class="btn-container">
+                                <button
+                                  class="btn btn-color-2 project-btn"
+                                  onclick="window.open('https://github.com/MariaGarciaB/Validacion_Tarjeta', '_blank')"
+                                >
+                                  Github
+                                </button>
+                                <button
+                                  class="btn btn-color-1 project-btn"
+                                  onclick="window.open('https://mariagarciab.github.io/Validacion_Tarjeta/src/', '_blank')"
+                                >
+                                  Live Demo
+                                </button>
+                              </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="info1">
+                    <img src="assets/p5.JPG" alt="Imágen proyecto ToDo List">
+                </div>
+                    <div class="info2">
+                        <h2>ToDo List</h2>
+                        <p id="descripcion">Tareas interactivas con almacenamiento en <strong>LocalStorage</strong>.<br><br><br><br></p>
+                            <div class="btn-container">
+                                <button
+                                  class="btn btn-color-2 project-btn"
+                                  onclick="window.open('https://github.com/MariaGarciaB/ToDoList', '_blank')"
+                                >
+                                  Github
+                                </button>
+                                <button
+                                  class="btn btn-color-1 project-btn"
+                                  onclick="window.open('https://mariagarciab.github.io/ToDoList/', '_blank')"
+                                >
+                                  Live Demo
+                                </button>
+                              </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- FOOTER -->
+        <footer>
+          <a href="#inicio" class="arriba">
+              <i class="fa-solid fa-angles-up"></i>
+          </a>
+          <div class="redes">
+              <a href="https://www.linkedin.com/in/mariagarbar/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://github.com/MariaGarciaB" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+      </footer>
+  
+      <script src="script.js"></script>
+  </body>
+  </html>
+
