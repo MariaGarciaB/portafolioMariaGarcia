@@ -46,8 +46,26 @@
     }
 }
 
+@media screen and (max-width: 767px){
+.inicio .contenido-banner h1{
+    font-size: 36px;
+}
+.inicio .contenido-banner h2{
+    font-size: 18px;
+}
+}
+
 /* @media screen and (min-width: 980px){
     .inicio .contenido-banner .contenedor-img{
         width: 50%;
     }
 } */
+@media screen and (max-width: 422px){
+    #skills{
+       display: none;
+    }
+    .inicio .contenido-banner img{
+        width: 90%;
+    }
+      
+}
