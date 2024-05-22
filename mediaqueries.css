@@ -19,6 +19,7 @@
     }
     nav.responsive ul li{
         border-bottom: 1px solid #fff;
+        background-color: #fff;
         padding: 10px 0;
     }
     .inicio .contenido-banner{
@@ -61,9 +62,14 @@
     }
 } */
 @media screen and (max-width: 422px){
-    #skills{
+    .mobil-none{
        display: none;
     }
+    .article-container article{
+        width: 80px;
+        height: 80px;
+        padding: 0.5rem;
+        }
     .inicio .contenido-banner img{
         width: 90%;
     }
